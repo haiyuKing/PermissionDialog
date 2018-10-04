@@ -1,0 +1,22 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- ==================权限申请对话框（alertdialog）================== -->
+    <!-- 对话框的圆角角度 -->
+    <dimen name="permission_dialog_corners">8dp</dimen>
+    <!-- 对话框的整体外边距 -->
+    <dimen name="permission_dialog_margin">30dp</dimen>
+    <!-- 对话框的标题内边距 -->
+    <dimen name="permission_dialog_title_padding">15dp</dimen>
+    <!-- 对话框的标题文本大小 -->
+    <dimen name="permission_dialog_title_text_size">22sp</dimen>
+    <!-- 对话框的描述文本大小 -->
+    <dimen name="permission_dialog_message_text_size">16sp</dimen>
+    <!-- 对话框的按钮内边距 -->
+    <dimen name="permission_dialog_btn_padding">8dp</dimen>
+    <!-- 对话框的按钮大小 -->
+    <dimen name="permission_dialog_btn_text_size">16sp</dimen>
+
+</resources>

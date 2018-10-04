@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <!-- 权限图标【可根据实际情况修改】 -->
+    <integer-array name="permission_icon">
+        <item>@drawable/permission_ic_storage</item>
+        <item>@drawable/permission_ic_camera</item>
+        <item>@drawable/permission_ic_location</item>
+        <item>@drawable/permission_ic_phone</item>
+        <item>@drawable/permission_ic_micro_phone</item>
+        <item>@drawable/permission_ic_calendar</item>
+        <item>@drawable/permission_ic_contacts</item>
+        <item>@drawable/permission_ic_sms</item>
+        <item>@drawable/permission_ic_sensors</item>
+    </integer-array>
+
+    <!-- 权限标题【可根据实际情况修改】 -->
+    <string-array name="permission_title">
+        <item>文件存储</item>
+        <item>相机相册</item>
+        <item>位置信息</item>
+        <item>电话状态</item>
+        <item>录制声音</item>
+        <item>日程信息</item>
+        <item>通讯录</item>
+        <item>短信信息</item>
+        <item>传感器</item>
+    </string-array>
+
+    <!-- 权限说明（这里应该是根据项目的实际情况，简要说明下该权限主要用于什么场景或者功能）【可根据实际情况修改】 -->
+    <string-array name="permission_info">
+        <item>允许应用读取、写入外部存储</item>
+        <item>允许应用访问摄像头进行拍照</item>
+        <item>允许应用获取定位信息</item>
+        <item>允许应用访问电话状态</item>
+        <item>允许应用通过手机或耳机的麦克录制声音</item>
+        <item>允许应用读取用户的日程信息</item>
+        <item>允许应用访问联系人通讯录信息</item>
+        <item>允许应用获取短信信息</item>
+        <item>允许应用获取传感器信息</item>
+    </string-array>
+    
+</resources>

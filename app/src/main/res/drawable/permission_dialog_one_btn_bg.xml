@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 确认对话框样式【含有图标、内容、左右两个按钮】布局文件 -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    <!-- 按压时的图片资源 -->
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <!-- 填充 -->
+            <solid
+                android:color="@color/permission_dialog_btn_bg_color"/><!-- 填充的颜色 -->
+            <!-- 描边 -->
+            <!--<stroke
+                android:width="1.0dip"
+                android:color="@color/confirm_cancel_util_dialog_stroke_color" />-->
+            <!-- 圆角半径 -->
+            <corners
+                android:radius="30dp"></corners>
+        </shape>
+    </item>
+
+    <!-- 正常时的图片资源 -->
+    <item >
+        <shape android:shape="rectangle">
+            <!-- 填充 -->
+            <solid
+                android:color="@color/permission_dialog_btn_bg_color"/><!-- 填充的颜色 -->
+            <!-- 描边 -->
+            <!--<stroke
+                android:width="1.0dip"
+                android:color="@color/confirm_cancel_util_dialog_stroke_color" />-->
+            <!-- 圆角半径 -->
+            <corners
+                android:radius="30dp"></corners>
+        </shape>
+    </item>
+
+</selector>

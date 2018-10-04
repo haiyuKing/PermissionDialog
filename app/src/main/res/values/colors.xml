@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <!-- ==================权限申请对话框（alertdialog）================== -->
+    <!-- 对话框的填充颜色 -->
+    <color name="permission_dialog_solid_color">#ffffffff</color>
+    <!-- 对话框的标题颜色 -->
+    <color name="permission_dialog_title_color">#000000</color>
+    <!-- 对话框的描述颜色 -->
+    <color name="permission_dialog_message_color">#87000000</color>
+    <!-- 对话框的图标颜色【可根据实际情况修改】 -->
+    <color name="permission_dialog_img_color">#000000</color>
+    <!-- 对话框的按钮背景颜色【可根据实际情况修改】 -->
+    <color name="permission_dialog_btn_bg_color">#07b4a2</color>
+    <!-- 对话框的按钮文字颜色 -->
+    <color name="permission_dialog_btn_text_color">#FFFFFF</color>
+
+</resources>

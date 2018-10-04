@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--虽然layout根节点设置了宽高为match_parent，但是最终显示的宽高都非常小，原因是AlertDialog默认会把根容器的宽高认为是wrap_content-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/alertdialogcomfirm_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/permission_dialog_bg"
+    android:layout_margin="@dimen/permission_dialog_margin"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <!-- 提示 -->
+    <TextView
+        android:id="@+id/permission_dialog_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/permission_dialog_title"
+        android:textColor="@color/permission_dialog_title_color"
+        android:textSize="@dimen/permission_dialog_title_text_size"
+        android:layout_marginTop="@dimen/permission_dialog_title_padding"
+        android:layout_marginBottom="@dimen/permission_dialog_title_padding"/>
+
+    <!-- 内容 -->
+    <TextView
+        android:id="@+id/permission_dialog_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="@string/permission_dialog_message"
+        android:textColor="@color/permission_dialog_message_color"
+        android:textSize="@dimen/permission_dialog_message_text_size"
+        android:layout_marginBottom="@dimen/permission_dialog_title_padding"
+        />
+
+    <!-- 权限列表样式 -->
+    <ScrollView
+        android:id="@+id/permission_dialog_list_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/permission_dialog_title_padding"
+        android:scrollbars="none"
+        >
+        <LinearLayout
+            android:id="@+id/layout_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- 确定按钮 -->
+    <TextView
+        android:id="@+id/dialog_confirm_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/permission_dialog_one_btn_bg"
+        android:gravity="center"
+        android:text="好的"
+        android:textColor="@color/permission_dialog_btn_text_color"
+        android:paddingTop="@dimen/permission_dialog_btn_padding"
+        android:paddingBottom="@dimen/permission_dialog_btn_padding"
+        android:textSize="@dimen/permission_dialog_btn_text_size"
+        android:layout_marginLeft="@dimen/permission_dialog_title_padding"
+        android:layout_marginRight="@dimen/permission_dialog_title_padding"
+        android:layout_marginBottom="@dimen/permission_dialog_title_padding"
+        android:focusable="true"
+        android:clickable="true"
+        />
+
+</LinearLayout>

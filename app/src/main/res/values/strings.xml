@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">PermissionDialog</string>
+
+    <!-- ==================权限申请对话框（alertdialog）================== -->
+    <string name="permission_dialog_title">权限申请</string>
+    <string name="permission_dialog_message">为了您能正常使用，需要以下权限</string>
+</resources>
