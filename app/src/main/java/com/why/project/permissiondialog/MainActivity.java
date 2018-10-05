@@ -1,5 +1,6 @@
 package com.why.project.permissiondialog;
 
+import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -17,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
 			@Override
 			public void onClick(View view) {
 				boolean hasShow = PreferencesUtils.getBoolean(MainActivity.this,PreferencesUtils.HAS_SHOW_PREMISSION_DIALOG,false);
-				//if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.M && ! hasShow){
+				if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.M && ! hasShow){
 					PermissionDialog permissionDialog = new PermissionDialog(MainActivity.this);
 					permissionDialog.setOnCertainButtonClickListener(new PermissionDialog.OnCertainButtonClickListener() {
 						@Override
@@ -28,9 +29,9 @@ public class MainActivity extends AppCompatActivity {
 						}
 					});
 					permissionDialog.show();
-				/*}else{
+				}else{
 					//调用运行时权限申请框架
-				}*/
+				}
 			}
 		});
 	}
