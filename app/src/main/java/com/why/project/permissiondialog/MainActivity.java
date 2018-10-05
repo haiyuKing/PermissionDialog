@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
 			@Override
 			public void onClick(View view) {
 				boolean hasShow = PreferencesUtils.getBoolean(MainActivity.this,PreferencesUtils.HAS_SHOW_PREMISSION_DIALOG,false);
-				//if(! hasShow){
+				//if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.M && ! hasShow){
 					PermissionDialog permissionDialog = new PermissionDialog(MainActivity.this);
 					permissionDialog.setOnCertainButtonClickListener(new PermissionDialog.OnCertainButtonClickListener() {
 						@Override
